@@ -1,0 +1,443 @@
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Revoke previously assigned partitions enrollment-topic-0
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Member consumer-school-group-1-7a5631de-1322-46b6-bab1-26d42f17195c sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:38:38 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:38:38 [INFO] Metrics scheduler closed
+2026-05-10 00:38:38 [INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-10 00:38:38 [INFO] Metrics reporters closed
+2026-05-10 00:38:38 [INFO] App info kafka.consumer for consumer-school-group-1 unregistered
+2026-05-10 00:38:38 [INFO] HikariPool-1 - Shutdown initiated...
+2026-05-10 00:38:38 [INFO] HikariPool-1 - Shutdown completed.
+2026-05-10 00:38:42 [INFO] Starting StudentManagementApplication using Java 17.0.18 with PID 32452 (D:\Eclips\Backend\student_management\target\classes started by Dell in D:\Eclips\Backend\student_management)
+2026-05-10 00:38:42 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-05-10 00:38:43 [INFO] Starting service [Tomcat]
+2026-05-10 00:38:43 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-10 00:38:43 [INFO] Initializing Spring embedded WebApplicationContext
+2026-05-10 00:38:43 [INFO] HikariPool-1 - Starting...
+2026-05-10 00:38:44 [INFO] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78003a1d
+2026-05-10 00:38:44 [INFO] HikariPool-1 - Start completed.
+2026-05-10 00:38:44 [WARN] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 00:38:45 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 00:38:48 [INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-school-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = school-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-05-10 00:38:48 [INFO] Kafka version: 3.6.2
+2026-05-10 00:38:48 [INFO] Kafka commitId: c4deed513057c94e
+2026-05-10 00:38:48 [INFO] Kafka startTimeMs: 1778362728645
+2026-05-10 00:38:48 [INFO] Started StudentManagementApplication in 8.057 seconds (process running for 8.484)
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Cluster ID: wWPScl8NQLCOlU9rMy2dGA
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: need to re-join with the given member-id: consumer-school-group-1-c9a71edf-53b1-44a5-8038-bd88f8548aae
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-10 00:38:48 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 00:38:49 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Successfully joined group with generation Generation{generationId=83, memberId='consumer-school-group-1-c9a71edf-53b1-44a5-8038-bd88f8548aae', protocol='range'}
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Finished assignment for group at generation 83: {consumer-school-group-1-c9a71edf-53b1-44a5-8038-bd88f8548aae=Assignment(partitions=[enrollment-topic-0])}
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Successfully synced group in generation Generation{generationId=83, memberId='consumer-school-group-1-c9a71edf-53b1-44a5-8038-bd88f8548aae', protocol='range'}
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Notifying assignor about the new Assignment(partitions=[enrollment-topic-0])
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Adding newly assigned partitions: enrollment-topic-0
+2026-05-10 00:38:51 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Setting offset for partition enrollment-topic-0 to the committed offset FetchPosition{offset=13, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2026-05-10 00:41:11 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:41:11 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 136ms
+2026-05-10 00:41:18 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:41:18 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 10ms
+2026-05-10 00:41:38 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:41:38 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 19ms
+2026-05-10 00:43:16 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:43:17 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 8ms
+2026-05-10 00:43:57 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:43:57 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 12ms
+2026-05-10 00:45:12 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:45:12 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 8ms
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Revoke previously assigned partitions enrollment-topic-0
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Member consumer-school-group-1-c9a71edf-53b1-44a5-8038-bd88f8548aae sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:46:16 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:46:16 [INFO] Metrics scheduler closed
+2026-05-10 00:46:16 [INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-10 00:46:16 [INFO] Metrics reporters closed
+2026-05-10 00:46:17 [INFO] App info kafka.consumer for consumer-school-group-1 unregistered
+2026-05-10 00:46:17 [INFO] HikariPool-1 - Shutdown initiated...
+2026-05-10 00:46:17 [INFO] HikariPool-1 - Shutdown completed.
+2026-05-10 00:46:20 [INFO] Starting StudentManagementApplication using Java 17.0.18 with PID 31608 (D:\Eclips\Backend\student_management\target\classes started by Dell in D:\Eclips\Backend\student_management)
+2026-05-10 00:46:20 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-05-10 00:46:21 [INFO] Starting service [Tomcat]
+2026-05-10 00:46:21 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-10 00:46:21 [INFO] Initializing Spring embedded WebApplicationContext
+2026-05-10 00:46:21 [INFO] HikariPool-1 - Starting...
+2026-05-10 00:46:22 [INFO] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a7b258e
+2026-05-10 00:46:22 [INFO] HikariPool-1 - Start completed.
+2026-05-10 00:46:22 [WARN] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 00:46:23 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 00:46:26 [INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-school-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = school-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-05-10 00:46:26 [INFO] Kafka version: 3.6.2
+2026-05-10 00:46:26 [INFO] Kafka commitId: c4deed513057c94e
+2026-05-10 00:46:26 [INFO] Kafka startTimeMs: 1778363186594
+2026-05-10 00:46:26 [INFO] Started StudentManagementApplication in 8.106 seconds (process running for 8.569)
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Cluster ID: wWPScl8NQLCOlU9rMy2dGA
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: need to re-join with the given member-id: consumer-school-group-1-c2464a50-07d0-44be-8154-1d009b2acaf0
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-10 00:46:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 00:46:27 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Successfully joined group with generation Generation{generationId=85, memberId='consumer-school-group-1-c2464a50-07d0-44be-8154-1d009b2acaf0', protocol='range'}
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Finished assignment for group at generation 85: {consumer-school-group-1-c2464a50-07d0-44be-8154-1d009b2acaf0=Assignment(partitions=[enrollment-topic-0])}
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Successfully synced group in generation Generation{generationId=85, memberId='consumer-school-group-1-c2464a50-07d0-44be-8154-1d009b2acaf0', protocol='range'}
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Notifying assignor about the new Assignment(partitions=[enrollment-topic-0])
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Adding newly assigned partitions: enrollment-topic-0
+2026-05-10 00:46:29 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Setting offset for partition enrollment-topic-0 to the committed offset FetchPosition{offset=19, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2026-05-10 00:46:37 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:37 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 243ms
+2026-05-10 00:46:52 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:52 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 54ms
+2026-05-10 00:46:52 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:52 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 12ms
+2026-05-10 00:46:52 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:52 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 8ms
+2026-05-10 00:46:52 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:52 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 7ms
+2026-05-10 00:46:52 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:46:52 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 10ms
+2026-05-10 00:48:30 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:48:30 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 26ms
+2026-05-10 00:49:15 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:49:15 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 12ms
+2026-05-10 00:55:12 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:55:12 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 12ms
+2026-05-10 00:55:12 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:55:12 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 8ms
+2026-05-10 00:55:12 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:55:12 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 6ms
+2026-05-10 00:55:12 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:55:12 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 6ms
+2026-05-10 00:55:26 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Node -1 disconnected.
+2026-05-10 00:55:49 [INFO] ➡️ ENTER: StudentService.updateStudentEnrollmentStatus(..)
+2026-05-10 00:55:49 [INFO] ⬅️ EXIT: StudentService.updateStudentEnrollmentStatus(..) | Time: 15ms
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Revoke previously assigned partitions enrollment-topic-0
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Member consumer-school-group-1-c2464a50-07d0-44be-8154-1d009b2acaf0 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 00:56:10 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 00:56:11 [INFO] Metrics scheduler closed
+2026-05-10 00:56:11 [INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-10 00:56:11 [INFO] Metrics reporters closed
+2026-05-10 00:56:11 [INFO] App info kafka.consumer for consumer-school-group-1 unregistered
+2026-05-10 00:56:11 [INFO] HikariPool-1 - Shutdown initiated...
+2026-05-10 00:56:11 [INFO] HikariPool-1 - Shutdown completed.
+2026-05-10 01:33:57 [INFO] Starting StudentManagementApplication using Java 17.0.18 with PID 840 (D:\Eclips\Backend\student_management\target\classes started by Dell in D:\Eclips\Backend\student_management)
+2026-05-10 01:33:57 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-05-10 01:33:58 [INFO] Starting service [Tomcat]
+2026-05-10 01:33:58 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-05-10 01:33:58 [INFO] Initializing Spring embedded WebApplicationContext
+2026-05-10 01:33:59 [INFO] HikariPool-1 - Starting...
+2026-05-10 01:33:59 [INFO] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74345700
+2026-05-10 01:33:59 [INFO] HikariPool-1 - Start completed.
+2026-05-10 01:33:59 [WARN] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-10 01:34:00 [WARN] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-10 01:34:03 [INFO] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-school-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = school-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-05-10 01:34:03 [INFO] Kafka version: 3.6.2
+2026-05-10 01:34:03 [INFO] Kafka commitId: c4deed513057c94e
+2026-05-10 01:34:03 [INFO] Kafka startTimeMs: 1778366043903
+2026-05-10 01:34:03 [INFO] Started StudentManagementApplication in 7.771 seconds (process running for 8.201)
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Cluster ID: wWPScl8NQLCOlU9rMy2dGA
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: need to re-join with the given member-id: consumer-school-group-1-bd093618-8d56-4a89-bd39-44639f0c1ca9
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] (Re-)joining group
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Member consumer-school-group-1-bd093618-8d56-4a89-bd39-44639f0c1ca9 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-05-10 01:34:04 [INFO] [Consumer clientId=consumer-school-group-1, groupId=school-group] Request joining group due to: consumer pro-actively leaving the group
+2026-05-10 01:34:04 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-10 01:34:07 [INFO] Metrics scheduler closed
+2026-05-10 01:34:07 [INFO] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-05-10 01:34:07 [INFO] Metrics reporters closed
+2026-05-10 01:34:07 [INFO] App info kafka.consumer for consumer-school-group-1 unregistered
+2026-05-10 01:34:07 [INFO] HikariPool-1 - Shutdown initiated...
+2026-05-10 01:34:07 [INFO] HikariPool-1 - Shutdown completed.
