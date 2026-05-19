@@ -283,4 +283,4 @@ java -jar target/<service-name>-0.0.1-SNAPSHOT.jar
 
 ## 📄 License
 
-This project was built as an academic graduation project.
+This project was built as an academic project.
